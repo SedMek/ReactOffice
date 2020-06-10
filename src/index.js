@@ -11,7 +11,7 @@ import "./App.scss";
 
 import socketIOClient from "socket.io-client";
 // const ENDPOINT = "http://localhost:4001";
-const ENDPOINT = "https://eaa3962cbd8d.ngrok.io/";
+const ENDPOINT = "https://0a9332bed478.ngrok.io/";
 
 console.log("initiating socket connection ...");
 const socket = socketIOClient(ENDPOINT);

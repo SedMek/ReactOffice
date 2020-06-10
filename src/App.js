@@ -5,6 +5,7 @@ import { Navbar, NavbarDivider, NavbarGroup, NavbarHeading, Switch } from "@blue
 import Player from "./components/player";
 import Controls from "./components/controls";
 import Loader from "./components/loader";
+import VideoChat from "./components/videoChat";
 
 function App({ socket }) {
 	const playerRef = useRef(null);
@@ -70,6 +71,8 @@ function App({ socket }) {
 				</NavbarGroup>
 			</Navbar>
 			<Player socket={socket} parentUrl={url} playerRef={playerRef} playing={playing} volume={volume} />
+			<VideoChat socket={socket} />
+			<VideoChat socket={socket} />
 			<Controls
 				socket={socket}
 				playerRef={playerRef}
