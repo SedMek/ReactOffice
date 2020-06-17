@@ -72,7 +72,6 @@ function App({ socket }) {
 			</Navbar>
 			<Player socket={socket} parentUrl={url} playerRef={playerRef} playing={playing} volume={volume} />
 			<VideoChat socket={socket} />
-			<VideoChat socket={socket} />
 			<Controls
 				socket={socket}
 				playerRef={playerRef}
